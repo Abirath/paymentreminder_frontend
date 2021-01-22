@@ -1,0 +1,42 @@
+.dialog__headerLineOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog__headerLineTwo {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dialog__contentLineOne {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  height: 50px;
+}
+
+.dialog__contentLineTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dialog__submitButton {
+  display: flex;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.dialog__chip {
+  color: black !important;
+  background-color: rgb(113, 153, 155) !important;
+}
+
+.dialog__headerLineOneBold {
+  font-weight: bold;
+}

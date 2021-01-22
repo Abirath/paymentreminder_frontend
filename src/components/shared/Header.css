@@ -1,0 +1,17 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: gainsboro;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-direction: row-reverse;
+}
+
+.header__logo {
+  width: 200px;
+  object-fit: contain;
+  margin: 15px 20px;
+  margin-top: 18px;
+}
