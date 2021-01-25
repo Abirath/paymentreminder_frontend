@@ -1,18 +1,29 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The application was built using ReactJS and Material UI.
 
-## Available Scripts
+The frontend repository was created using `create-react-app paymentreminder_frontend --template typescript`, with a few minor changes (see [here](https://create-react-app.dev/docs/documentation-intro) for more information on create-react-app).
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ideally this application would run on port 3000.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The main focus of the website is to display a list of upcoming rent payments, it also includes a left-hand navigation menu (Built partially).
+
+When the user navigates to the `Dashboard` for the first time, the upcoming rent payments are fetched from the API developed in [backend](#backend), and are formatted in client readable results.
+
+- The payment due dates are formatted as MMM DD.
+- The status of each payment are displayed as blank, `Paid`, or `Overdue` depending on the payments status and due date.
+- The pay button will be displayed only for payments that are not `Paid`
+- The amount is formatted as a US dollar amount (e.g. \$10.00)
+- Payments are listed in ascending chronological order.
+
+If a user clicks on the `Pay` button, a dialog box with submit button is shown to the user.  
+Upon confirmation, a call is made to the REST API that updates the state of that payment to `Paid`.  
+The result of that call is then used to update the status of that transaction in the list that is displayed to the user.
+
 
 ### `npm test`
 
