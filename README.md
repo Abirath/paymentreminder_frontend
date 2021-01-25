@@ -10,9 +10,9 @@ In the project directory, you can run:
 
 Ideally this application would run on port 3000.
 
-The main focus of the website is to display a list of upcoming rent payments, it also includes a left-hand navigation menu (Built partially).
+The main focus of the website is to display a list of upcoming rent payments, it also includes a left-hand navigation menu.
 
-When the user navigates to the `Dashboard` for the first time, the upcoming rent payments are fetched from the API developed in [backend](#backend), and are formatted in client readable results.
+When the user navigates to the `Dashboard` for the first time, the upcoming rent payments are fetched from the API developed in [backend](https://github.com/Abirath/PaymentReminder.Backend), and are formatted in client readable results.
 
 - The payment due dates are formatted as MMM DD.
 - The status of each payment are displayed as blank, `Paid`, or `Overdue` depending on the payments status and due date.
