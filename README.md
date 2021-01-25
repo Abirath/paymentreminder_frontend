@@ -1,14 +1,13 @@
-# Getting Started with Create React App
+# Payment Reminder Frontend
 
 The application was built using ReactJS and Material UI.
+- The code is written in TypeScript following functional programming pattern. 
+- Axios library package is used to make API calls to the [backend](https://github.com/Abirath/PaymentReminder.Backend) project.
+- Google's Material UI design is incorporated to develop aesthetic UI. 
 
-The frontend repository was created using `create-react-app paymentreminder_frontend --template typescript`, with a few minor changes (see [here](https://create-react-app.dev/docs/documentation-intro) for more information on create-react-app).
+Note: Make sure to run the [backend](https://github.com/Abirath/PaymentReminder.Backend) project first to make the API up and running.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Ideally this application would run on port 3000.
+## Frontend Features 
 
 The main focus of the website is to display a list of upcoming rent payments, it also includes a left-hand navigation menu.
 
@@ -24,6 +23,18 @@ If a user clicks on the `Pay` button, a dialog box with submit button is shown t
 Upon confirmation, a call is made to the REST API that updates the state of that payment to `Paid`.  
 The result of that call is then used to update the status of that transaction in the list that is displayed to the user.
 
+### Running the frontend project
+
+The frontend repository was created using `create-react-app paymentreminder_frontend --template typescript`, with a few minor changes (see [here](https://create-react-app.dev/docs/documentation-intro) for more information on create-react-app).
+
+To startup the frontend client run the following command.
+
+- `npm install` - This will fetch the required node modules for the website to run (and for the other scripts below).
+- `npm start` - This will start the application for development
+- `npm run build` - Will create a production optimised build
+- `npm test` - Will run the front end tests
+
+Ideally this application would run on port 3000.
 
 ### `npm test`
 
@@ -39,16 +50,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
