@@ -5,7 +5,7 @@ The application was built using ReactJS and Material UI.
 - Axios library package is used to make API calls to the [backend](https://github.com/Abirath/PaymentReminder.Backend) project.
 - Google's Material UI design is incorporated to develop aesthetic UI. 
 
-Note: Make sure to run the [backend](https://github.com/Abirath/PaymentReminder.Backend) project first to make the API up and running.
+**Note:** Make sure to run the [backend](https://github.com/Abirath/PaymentReminder.Backend) project first to make the API up and running.
 
 ## Frontend Features 
 
@@ -34,7 +34,7 @@ To startup the frontend client run the following command.
 - `npm run build` - Will create a production optimised build
 - `npm test` - Will run the front end tests
 
-Ideally this application would run on port 3000.
+Ideally this application would run on port **3000**.
 
 ### `npm test`
 
